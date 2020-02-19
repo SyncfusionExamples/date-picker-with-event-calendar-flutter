@@ -112,11 +112,9 @@ class CalendarDisplayDate extends State<DisplayDate> {
   }
 
   void _viewChanged(ViewChangedDetails viewChangedDetails) {
-    SchedulerBinding.instance.addPostFrameCallback((duration) {
-      setState(() {
+    SchedulerBinding.instance.addPostFrameCallback((duration) { 
         _datePicked = viewChangedDetails
             .visibleDates[viewChangedDetails.visibleDates.length ~/ 2];
-      });
-    });
+      }); 
   }
 }
