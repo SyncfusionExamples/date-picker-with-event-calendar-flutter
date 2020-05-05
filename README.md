@@ -72,3 +72,10 @@ actions: <Widget>[
   ) 
 ], 
 ```
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/11010/how-to-update-event-calendar-sfcalendar-displaydate-using-showdatepicker-in-flutter)**
+
+**Screenshots**
+
+![Display date](http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img2.jpeg)
+![Picker date](http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img3.jpeg)
+![picker display date](http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img4.jpeg)
