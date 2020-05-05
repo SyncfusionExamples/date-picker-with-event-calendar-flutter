@@ -1,4 +1,4 @@
-# Update event calendar (SfCalendar) DisplayDate using DatePicker in flutter 
+# How to update event calendar (SfCalendar) DisplayDate using showDatePicker in Flutter?
 
 In flutter event calendar, you can dynamically update the initialDisplayDate using DatePicker. 
 
