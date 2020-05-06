@@ -2,7 +2,7 @@
 
 In flutter event calendar, you can dynamically update the initialDisplayDate using DatePicker. 
 
-![Binding date from datepicker to calendar](https://github.com/SyncfusionExamples/date-picker-with-event-calendar-flutter/blob/master/screenshots/Datepicker%20and%20calendar.gif)
+<img alt="Binding date from datepicker to calendar"  src="https://github.com/SyncfusionExamples/date-picker-with-event-calendar-flutter/blob/master/screenshots/Datepicker%20and%20calendar.gif" width="250" height="400" />|
 
 ## Step 1 
 
@@ -76,6 +76,6 @@ actions: <Widget>[
 
 **Screenshots**
 
-![Display date](http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img2.jpeg)
-![Picker date](http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img3.jpeg)
-![picker display date](http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img4.jpeg)
+<img alt="Display date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img2.jpeg" width="250" height="400" />|
+<img alt="Picker date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img3.jpeg" width="250" height="400" />|
+<img alt="picker display date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img4.jpeg" width="250" height="400" />|
