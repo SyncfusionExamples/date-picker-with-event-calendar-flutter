@@ -76,6 +76,6 @@ actions: <Widget>[
 
 **Screenshots**
 
-<img alt="Display date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img2.jpeg" width="250" height="400" />|
-<img alt="Picker date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img3.jpeg" width="250" height="400" />|
-<img alt="picker display date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img4.jpeg" width="250" height="400" />|
+<img alt="Display date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img2.jpeg" width="250" height="500" />|
+<img alt="Picker date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img3.jpeg" width="250" height="500" />|
+<img alt="picker display date"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-690/flut-690_img4.jpeg" width="250" height="500" />|
