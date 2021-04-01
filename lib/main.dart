@@ -30,16 +30,13 @@ List<String> views = <String>[
 ];
 
 class CalendarDisplayDate extends State<DisplayDate> {
-  CalendarView _calendarView;
-  DateTime _datePicked;
-  DateTime _calendarDate;
+  CalendarController _controller = CalendarController();
+  DateTime? _datePicked = DateTime.now();
 
   @override
   void initState() {
     // TODO: implement initState
-    _calendarView = CalendarView.week;
-    _datePicked = DateTime.now();
-    _calendarDate = DateTime.now();
+//    _datePicked = DateTime.now();
     super.initState();
   }
 
@@ -51,15 +48,12 @@ class CalendarDisplayDate extends State<DisplayDate> {
           FlatButton(
             onPressed: () {
               showDatePicker(
-                  context: context,
-                  initialDate: _datePicked,
-                  firstDate: DateTime(2000),
-                  lastDate: DateTime(2100))
-                  .then((DateTime date) {
-                if (date != null && date != _calendarDate)
-                  setState(() {
-                    _calendarDate = date;
-                  });
+                      context: context,
+                      initialDate: _datePicked!,
+                      firstDate: DateTime(2000),
+                      lastDate: DateTime(2100))
+                  .then((DateTime? date) {
+                if (date != null) _controller.displayDate = date;
               });
             },
             child: Icon(
@@ -79,19 +73,19 @@ class CalendarDisplayDate extends State<DisplayDate> {
           onSelected: (String value) {
             setState(() {
               if (value == 'Day') {
-                _calendarView = CalendarView.day;
+                _controller.view = CalendarView.day;
               } else if (value == 'Week') {
-                _calendarView = CalendarView.week;
+                _controller.view = CalendarView.week;
               } else if (value == 'WorkWeek') {
-                _calendarView = CalendarView.workWeek;
+                _controller.view = CalendarView.workWeek;
               } else if (value == 'Month') {
-                _calendarView = CalendarView.month;
+                _controller.view = CalendarView.month;
               } else if (value == 'Timeline Day') {
-                _calendarView = CalendarView.timelineDay;
+                _controller.view = CalendarView.timelineDay;
               } else if (value == 'Timeline Week') {
-                _calendarView = CalendarView.timelineWeek;
+                _controller.view = CalendarView.timelineWeek;
               } else if (value == 'Timeline WorkWeek') {
-                _calendarView = CalendarView.timelineWorkWeek;
+                _controller.view = CalendarView.timelineWorkWeek;
               }
             });
           },
@@ -101,8 +95,8 @@ class CalendarDisplayDate extends State<DisplayDate> {
         children: <Widget>[
           Expanded(
             child: SfCalendar(
-              initialDisplayDate: _calendarDate,
-              view: _calendarView,
+              view: CalendarView.week,
+              controller: _controller,
               onViewChanged: _viewChanged,
             ),
           ),
@@ -112,9 +106,9 @@ class CalendarDisplayDate extends State<DisplayDate> {
   }
 
   void _viewChanged(ViewChangedDetails viewChangedDetails) {
-    SchedulerBinding.instance.addPostFrameCallback((duration) { 
-        _datePicked = viewChangedDetails
-            .visibleDates[viewChangedDetails.visibleDates.length ~/ 2];
-      }); 
+    SchedulerBinding.instance!.addPostFrameCallback((duration) {
+      _datePicked = viewChangedDetails
+          .visibleDates[viewChangedDetails.visibleDates.length ~/ 2];
+    });
   }
 }
