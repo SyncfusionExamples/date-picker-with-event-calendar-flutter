@@ -36,7 +36,6 @@ class CalendarDisplayDate extends State<DisplayDate> {
   @override
   void initState() {
     // TODO: implement initState
-//    _datePicked = DateTime.now();
     super.initState();
   }
 
