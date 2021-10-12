@@ -29,7 +29,7 @@ class CalendarDisplayDate extends State<DisplayDate> {
       home: Scaffold(
         appBar: AppBar(
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               onPressed: () {
                 showDatePicker(
                         context: context,
