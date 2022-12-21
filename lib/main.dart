@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(InitialDisplayDate());
+void main() => runApp(const InitialDisplayDate());
 
 
 class InitialDisplayDate extends StatelessWidget {
+  const InitialDisplayDate({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,15 +34,15 @@ class CalendarDisplayDate extends State<DisplayDate> {
             TextButton(
               onPressed: () {
                 showDatePicker(
-                        context: context,
-                        initialDate: _datePicked!,
-                        firstDate: DateTime(2000),
-                        lastDate: DateTime(2100))
+                    context: context,
+                    initialDate: _datePicked!,
+                    firstDate: DateTime(2000),
+                    lastDate: DateTime(2100))
                     .then((DateTime? date) {
                   if (date != null) _controller.displayDate = date;
                 });
               },
-              child: Icon(
+              child: const Icon(
                 Icons.date_range,
                 color: Colors.white,
               ),
@@ -54,7 +56,7 @@ class CalendarDisplayDate extends State<DisplayDate> {
                 view: CalendarView.week,
                 controller: _controller,
                 onViewChanged: _viewChanged,
-                allowedViews: [
+                allowedViews: const [
                   CalendarView.day,
                   CalendarView.week,
                   CalendarView.workWeek,
@@ -72,7 +74,7 @@ class CalendarDisplayDate extends State<DisplayDate> {
   }
 
   void _viewChanged(ViewChangedDetails viewChangedDetails) {
-    SchedulerBinding.instance!.addPostFrameCallback((duration) {
+    SchedulerBinding.instance.addPostFrameCallback((duration) {
       _datePicked = viewChangedDetails
           .visibleDates[viewChangedDetails.visibleDates.length ~/ 2];
     });
