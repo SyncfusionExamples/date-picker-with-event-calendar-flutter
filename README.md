@@ -1,16 +1,19 @@
-# date_picker_with_event_calendar
+# How to update event calendar (SfCalendar) DisplayDate using showDatePicker in Flutter?
 
-A new Flutter project.
+A quick-start example to help you to update event calendar (SfCalendar) DisplayDate using showDatePicker in Flutter.
 
-## Getting Started
+You can update the view display date in the Flutter Event Calendar by using the `showDatePicker` widget. In this sample, the selected date can be get from the showDatePicker, and then it was assigned to the Calendar display date.
 
-This project is a starting point for a Flutter application.
+For more details , you can refer to our [KB](https://www.syncfusion.com/kb/11010/how-to-update-event-calendar-sfcalendar-displaydate-using-showdatepicker-in-flutter) documentation.
 
-A few resources to get you started if this is your first Flutter project:
+## Requirements to run the demo
+* [VS Code](https://code.visualstudio.com/download)
+* [Flutter SDK v1.22+](https://flutter.dev/docs/development/tools/sdk/overview)
+* [For more development tools](https://flutter.dev/docs/development/tools/devtools/overview)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to run this application
+To run this application, you need to first clone or download the ‘create a flutter maps widget in 10 minutes’ repository and open it in your preferred IDE. Then, build and run your project to view the output.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Further help
+For more help, check the [Syncfusion Flutter documentation](https://help.syncfusion.com/flutter/introduction/overview),
+ [Flutter documentation](https://flutter.dev/docs/get-started/install).
